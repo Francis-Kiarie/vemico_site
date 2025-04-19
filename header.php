@@ -1,6 +1,6 @@
 <?php
 // header.php
-if (!isset($pageTitle)) { $pageTitle = 'My IT Business'; }
+if (!isset($pageTitle)) { $pageTitle = 'Home - Vemico Tech'; }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -28,7 +28,7 @@ if (!isset($pageTitle)) { $pageTitle = 'My IT Business'; }
 <body>
 <nav class="navbar navbar-expand-custom navbar-mainbg fixed-top">
   <div class="container-fluid">
-    <a class="navbar-brand navbar-logo" href="index.php">MyITBusiness</a>
+    <a class="navbar-brand navbar-logo" href="index.php">Vemico Tech</a>
     <button class="navbar-toggler" type="button"
       data-bs-toggle="collapse"
       data-bs-target="#navbarSupportedContent"
