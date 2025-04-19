@@ -36,7 +36,7 @@
   </div>
 </footer>
 <!-- Bootstrap JS Bundle (Popper included) -->
-<<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
 <script
   src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-…" crossorigin="anonymous"
