@@ -22,8 +22,6 @@ if (!isset($pageTitle)) { $pageTitle = 'Home - Vemico Tech'; }
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     rel="stylesheet"
   >
-  <!-- Custom Navbar Styles (hori‑selector, colors) :contentReference[oaicite:16]{index=16} -->
-  <link href="css/custom-navbar.css" rel="stylesheet">
 </head>
 <body>
 <nav class="navbar navbar-expand-custom navbar-mainbg fixed-top">
