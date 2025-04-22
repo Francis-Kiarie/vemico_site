@@ -33,12 +33,11 @@ require_once 'header.php';
             <!-- Web Development -->
             <div class="col-md-4">
                 <div class="card h-100 text-center border-0 shadow-sm">
-                    <img src="assets/images/services-web-dev.jpg" class="card-img-top" alt="Graphics Design">
+                    <img src="assets/images/services-web-dev.jpg" class="card-img-top" alt="Web Development">
                     <div class="card-body">
                         <h5 class="card-title">Web development</h5>
-                        <p class="card-text">We create dynamic, responsive websites with 
-                            excellent UI/UX.</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#webdevelomentModal">
+                        <p class="card-text">We create dynamic, responsive websites with excellent UI/UX.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#webdevelopmentModal">
                             Learn More
                         </button>
                     </div>
@@ -100,61 +99,66 @@ require_once 'header.php';
         </div>
     </div>
 </section>
-<!-- Call to action -->
-<section class="py-5 text-black text-center" style="background-color:rgb(229, 230, 231);">
-    <div class="container">
-        <h3 class="mb-3">Ready to start your project?</h3>
-        <p class="mb-4">Get in touch today for a free consultation and quote.</p>
-        <a href="contact.php" class="btn btn-light btn-lg">Contact Us</a>
+<!-- Call to Action Section -->
+<section id="why-choose-us" class="py-5 bg-white">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="display-5">Why Choose Us?</h2>
     </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <p class="lead mb-4">
+          We combine technical expertise with a client-centric approach, delivering solutions that align with your business goals.
+        </p>
+        <p class="mb-4">
+          From startups to enterprises, our multidisciplinary team ensures innovation, security, and measurable results at every stage of your digital journey. Let us be your partner in navigating the evolving tech landscape!
+        </p>
+        <div class="text-center">
+          <a href="contact.php" class="btn btn-primary btn-lg">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- Modals Definitions -->
 
 <!-- Graphics Design Modal -->
-<div
-    class="modal fade"
-    id="graphicsModal"
-    tabindex="-1"
-    aria-labelledby="graphicsModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="graphicsModalLabel">Graphics Design</h5>
-                <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <ul>
-                    <li>Logo and brand identity creation</li>
-                    <li>Brochure, flyer, and poster design</li>
-                    <li>Illustrations and infographics</li>
-                </ul>
-            </div>
-            <div class="modal-footer">
-                <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-bs-dismiss="modal">Close</button>
-            </div>
-        </div>
+<div class="modal fade" id="graphicsModal" tabindex="-1" aria-labelledby="graphicsModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="graphicsModalLabel">Graphics Design</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <p>
+       Elevate your brand identity with visually striking designs tailored to your business ethos. 
+       Our services include crafting professional company profiles, logos, business cards, letterheads, 
+       and multimedia artwork optimized for both print and digital platforms. We focus on creating cohesive, 
+       modern designs that resonate with your target audience, ensuring consistency across marketing collateral, 
+       social media, and web assets. From concept to execution, we collaborate closely with clients to deliver 
+       innovative visuals that amplify brand recognition and leave a lasting impression.
+       </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
     </div>
+  </div>
 </div>
+
 <!-- Web Development Modal -->
 <div
     class="modal fade"
-    id="webdevelomentModal"
+    id="webdevelopmentModal"
     tabindex="-1"
-    aria-labelledby="webdevelomentModalLabel"
+    aria-labelledby="webdevelopmentModalLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="webdelopmentmodallabel">Web Devolepment</h5>
+                <h5 class="modal-title" id="webdevelopmentModalLabel">Web Development</h5>
                 <button
                     type="button"
                     class="btn-close"
@@ -162,8 +166,9 @@ require_once 'header.php';
                     aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                We create dynamic, responsive websites with excellent UI/UX,
-                ranging from corporate sites to eCommerce platforms, ensuring seamless user experiences.
+               <p>
+               Captivate your audience with high-performance websites that blend form and function. We specialize in responsive, mobile-first designs with intuitive UI/UX, tailored for corporate websites, eCommerce stores, SaaS platforms, and dynamic web applications. Leveraging CMS platforms like WordPress or headless architectures, we optimize sites for speed, SEO, and cross-device compatibility. Additional offerings include custom plugins, payment gateway integration, member portals, and ongoing maintenance to ensure your digital presence remains cutting-edge.
+               </p>
             </div>
             <div class="modal-footer">
                 <button
@@ -192,11 +197,9 @@ require_once 'header.php';
                     aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <ul>
-                    <li>Platform strategy and audit</li>
-                    <li>Content calendar and creation</li>
-                    <li>Community management and reporting</li>
-                </ul>
+                <p>
+                Strengthen your online influence with strategic social media campaigns. We curate platform-specific content (video, graphics, blogs), manage community engagement, and deploy targeted ads across Facebook, Instagram, LinkedIn, and emerging platforms. Our data-backed approach includes competitor analysis, audience segmentation, and performance metrics to refine strategies. Services extend to influencer partnerships, crisis management, and campaign analytics, driving brand loyalty, lead generation, and measurable growth in conversions.
+                </p>
             </div>
             <div class="modal-footer">
                 <button
@@ -226,11 +229,9 @@ require_once 'header.php';
                     aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <ul>
-                    <li>Requirement analysis and system design</li>
-                    <li>Agile development with CI/CD pipelines</li>
-                    <li>Quality assurance and performance tuning</li>
-                </ul>
+                <p>
+                Drive digital transformation with bespoke software solutions designed to meet your unique needs. Our full-cycle development process covers ERP systems, mobile apps (iOS/Android), web applications, and scalable enterprise software. Using agile methodologies, we build secure, user-centric platforms with robust features like CRM tools, inventory management, and workflow automation. From initial ideation to post-launch support, we ensure seamless integration with existing systems, future-proof scalability, and compliance with industry standards.
+                </p>
             </div>
             <div class="modal-footer">
                 <button
@@ -250,12 +251,9 @@ require_once 'header.php';
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <ul>
-          <li>24/7 helpdesk with priority ticketing system</li>
-          <li>On‑site and remote troubleshooting for hardware and software</li>
-          <li>Network configuration, monitoring, and optimization</li>
-          <li>Backup verification and disaster recovery planning</li>
-        </ul>
+        <p>
+        Keep your business running smoothly with our end-to-end IT support solutions. We provide proactive troubleshooting, system maintenance, network security audits, and 24/7 technical assistance to businesses of all scales. Our experts handle hardware/software setup, data backup, cloud integration, and cybersecurity protocols to safeguard against threats. Whether resolving day-to-day glitches or implementing long-term IT strategies, we prioritize minimizing downtime, enhancing operational efficiency, and empowering your team with reliable technology.
+        </p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -273,19 +271,17 @@ require_once 'header.php';
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <ul>
-          <li>Data cleaning and preprocessing pipelines</li>
-          <li>Statistical modeling and predictive analytics</li>
-          <li>Interactive dashboards with real‑time updates</li>
-          <li>Custom reporting and KPI tracking</li>
-        </ul>
-      </div>
+       <p>
+       Unlock the power of your data with advanced analytics services. We transform raw data into actionable insights using predictive modeling, AI-driven analytics, and interactive dashboards. Our team employs tools like Power BI, Tableau, and Python to deliver real-time reporting, customer behavior analysis, and KPI tracking. Whether optimizing supply chains, forecasting trends, or refining marketing strategies, we empower data-driven decisions that enhance operational efficiency, reduce costs, and boost ROI.
+       </p>
+        </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
       </div>
-    </div>
   </div>
+</div>
 </div>
 
 
+<!-- Footer -->
 <?php require_once 'footer.php'; ?>
