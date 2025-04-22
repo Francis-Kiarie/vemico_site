@@ -100,26 +100,29 @@ require_once 'header.php';
     </div>
 </section>
 <!-- Call to Action Section -->
-<section id="why-choose-us" class="py-5 bg-white">
+<section class="cta-section py-5 bg-body bg-gradient text-dark rounded-3 shadow-lg">
   <div class="container">
-    <div class="text-center mb-4">
-      <h2 class="display-5">Why Choose Us?</h2>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
+    <div class="row align-items-center">
+      <!-- Text Column -->
+      <div class="col-md-8 text-center text-md-start mb-3 mb-md-0">
+        <h2 class="display-5 fw-bold mb-3">Why Choose Us?</h2>
         <p class="lead mb-4">
           We combine technical expertise with a client-centric approach, delivering solutions that align with your business goals.
         </p>
         <p class="mb-4">
           From startups to enterprises, our multidisciplinary team ensures innovation, security, and measurable results at every stage of your digital journey. Let us be your partner in navigating the evolving tech landscape!
         </p>
-        <div class="text-center">
-          <a href="contact.php" class="btn btn-primary btn-lg">Get Started</a>
-        </div>
+      </div>
+      <!-- Button Column -->
+      <div class="col-md-4 text-center text-md-end">
+        <a href="contact.php" class="btn btn-primary btn-lg px-4 rounded-pill">
+          Get Started <i class="bi bi-arrow-right ms-2"></i>
+        </a>
       </div>
     </div>
   </div>
 </section>
+
 
 <!-- Modals Definitions -->
 
