@@ -35,6 +35,7 @@
     © <?= date('Y'); ?> Vemico Tech. All rights reserved.
   </div>
 </footer>
+</div>
 <!-- Bootstrap JS Bundle (Popper included) -->
 <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 <script
