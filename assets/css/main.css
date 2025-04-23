@@ -235,3 +235,41 @@ i {
 .bg-body-tertiary {
     background-color: rgba(255, 255, 255, 0.15) !important;
 }
+
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.1);
+}
+.cta-bg {
+    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+}
+.services-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('../images/services-hero-bg.jpg') center center/cover no-repeat;
+    padding: 8rem 0;
+    margin-top: -2rem; /* Compensate for navbar offset */
+}
+.shadow-hover {
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0 0 0 / 0.05);
+}
+
+.shadow-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 2rem rgba(0 0 0 / 0.1) !important;
+}
+
+.service-image {
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid var(--bs-primary);
+}
+
+.cta-strategic {
+    background: var(--bs-primary-bg-subtle);
+    position: relative;
+    overflow: hidden;
+}
