@@ -5,122 +5,228 @@ require_once 'header.php';
 ?>
 
 <!-- Hero Section -->
-<section class="bg-body text-center py-5">
-    <div class="container">
-        <h1 class="display-5 fw-bold">Our Services</h1>
-        <p class="lead mb-4">Explore how Vemico Tech can power your digital transformation.</p>
+<section class="services-hero bg-dark text-white py-5">
+    <div class="container text-center animate__animated animate__fadeIn">
+        <h1 class="display-5 fw-bold mb-3">Transform Your Digital Presence</h1>
+        <p class="lead mb-4">Leverage our full-spectrum technical expertise to drive business growth</p>
+        <div class="d-flex gap-3 justify-content-center">
+            <a href="#services-detail" class="btn btn-primary btn-lg px-4">Explore Services</a>
+            <a href="contact.php" class="btn btn-outline-light btn-lg px-4">Quick Inquiry</a>
+        </div>
     </div>
 </section>
 
-<!-- Services Section -->
-<section id="services-detail" class="py-5 bg-light">
+<!-- Services Grid with Enhanced Cards -->
+<section id="services-detail" class="py-5">
     <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-6 fw-bold mb-3">Comprehensive Digital Solutions</h2>
+            <p class="text-muted mx-auto" style="max-width: 600px;">
+                End-to-end services combining technical excellence with strategic innovation
+            </p>
+        </div>
+        
         <div class="row g-4">
             <!-- Graphics Design -->
-            <div class="col-md-4">
-                <div class="card h-100 text-center border-0 shadow-sm">
-                    <img src="assets/images/graphics-design.jpg" class="card-img-top" alt="Graphics Design">
-                    <div class="card-body">
-                        <h5 class="card-title">Graphics Design</h5>
-                        <p class="card-text">Bring your imagination to life with professional visual design services.</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#graphicsModal">
-                            Learn More
-                        </button>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-hover">
+                    <img src="assets/images/graphics-design.jpg" 
+                         class="card-img-top service-image" 
+                         alt="Branding and visual design services"
+                         loading="lazy">
+                    <div class="card-body p-4">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-palette fa-2x text-primary"></i>
+                        </div>
+                        <h3 class="h5 card-title fw-bold">Graphics Design</h3>
+                        <p class="card-text text-secondary">
+                            Professional branding packages and marketing collateral that tell your unique story
+                        </p>
+                        <div class="mt-auto">
+                            <button type="button" 
+                                    class="btn btn-outline-primary"
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#graphicsModal">
+                                Service Details <i class="fas fa-chevron-right ms-2"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- Web Development -->
-            <div class="col-md-4">
-                <div class="card h-100 text-center border-0 shadow-sm">
-                    <img src="assets/images/services-web-dev.jpg" class="card-img-top" alt="Web Development">
-                    <div class="card-body">
-                        <h5 class="card-title">Web development</h5>
-                        <p class="card-text">We create dynamic, responsive websites with excellent UI/UX.</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#webdevelopmentModal">
-                            Learn More
-                        </button>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-hover">
+                    <img src="assets/images/services-web-dev.jpg" 
+                         class="card-img-top service-image" 
+                         alt="Custom web development solutions"
+                         loading="lazy">
+                    <div class="card-body p-4">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-code fa-2x text-primary"></i>
+                        </div>
+                        <h3 class="h5 card-title fw-bold">Web Development</h3>
+                        <p class="card-text text-secondary">
+                            Responsive websites and web apps built with modern tech stacks
+                        </p>
+                        <div class="mt-auto">
+                            <button type="button" 
+                                    class="btn btn-outline-primary"
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#webdevelopmentModal">
+                                Service Details <i class="fas fa-chevron-right ms-2"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
+
             <!-- Social Media Management -->
-            <div class="col-md-4">
-                <div class="card h-100 text-center border-0 shadow-sm">
-                    <img src="assets/images/social-media.jpg" class="card-img-top" alt="Social Media Management">
-                    <div class="card-body">
-                        <h5 class="card-title">Social Media Management</h5>
-                        <p class="card-text">Strategy, content creation, and community engagement across platforms.</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#socialModal">
-                            Learn More
-                        </button>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-hover">
+                    <img src="assets/images/social-media.jpg" 
+                         class="card-img-top service-image" 
+                         alt="Social media strategy and management"
+                         loading="lazy">
+                    <div class="card-body p-4">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-hashtag fa-2x text-primary"></i>
+                        </div>
+                        <h3 class="h5 card-title fw-bold">Social Media Management</h3>
+                        <p class="card-text text-secondary">
+                            Data-driven social strategies across major platforms
+                        </p>
+                        <div class="mt-auto">
+                            <button type="button" 
+                                    class="btn btn-outline-primary"
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#socialModal">
+                                Service Details <i class="fas fa-chevron-right ms-2"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- Software Development -->
-            <div class="col-md-4">
-                <div class="card h-100 text-center border-0 shadow-sm">
-                    <img src="assets/images/software-development.jpg" class="card-img-top" alt="Software Development">
-                    <div class="card-body">
-                        <h5 class="card-title">Software Development</h5>
-                        <p class="card-text">End-to-end application design and engineering for web and mobile.</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#softwareModal">
-                            Learn More
-                        </button>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-hover">
+                    <img src="assets/images/software-development.jpg" 
+                         class="card-img-top service-image" 
+                         alt="Custom software development services"
+                         loading="lazy">
+                    <div class="card-body p-4">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-cogs fa-2x text-primary"></i>
+                        </div>
+                        <h3 class="h5 card-title fw-bold">Software Development</h3>
+                        <p class="card-text text-secondary">
+                            Enterprise-grade solutions from concept to deployment
+                        </p>
+                        <div class="mt-auto">
+                            <button type="button" 
+                                    class="btn btn-outline-primary"
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#softwareModal">
+                                Service Details <i class="fas fa-chevron-right ms-2"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
+
             <!-- IT Support -->
-            <div class="col-md-4">
-                <div class="card h-100 text-center border-0 shadow-sm">
-                    <img src="assets/images/it-support.jpg" class="card-img-top" alt="IT Support">
-                    <div class="card-body">
-                        <h5 class="card-title">IT Support</h5>
-                        <p class="card-text">24/7 helpdesk and on-site troubleshooting for all your IT needs.</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#itSupportModal">
-                            Learn More
-                        </button>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-hover">
+                    <img src="assets/images/it-support.jpg" 
+                         class="card-img-top service-image" 
+                         alt="Comprehensive IT support services"
+                         loading="lazy">
+                    <div class="card-body p-4">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-server fa-2x text-primary"></i>
+                        </div>
+                        <h3 class="h5 card-title fw-bold">IT Support</h3>
+                        <p class="card-text text-secondary">
+                            Proactive IT infrastructure management and support
+                        </p>
+                        <div class="mt-auto">
+                            <button type="button" 
+                                    class="btn btn-outline-primary"
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#itSupportModal">
+                                Service Details <i class="fas fa-chevron-right ms-2"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!--Data Analysis -->
-            <div class="col-md-4">
-                <div class="card h-100 text-center border-0 shadow-sm">
-                    <img src="assets/images/data-analysis.jpg" class="card-img-top" alt="Data Analysis">
-                    <div class="card-body">
-                        <h5 class="card-title">Data Analysis</h5>
-                        <p class="card-text">Transforming raw data into actionable insights for better decision-making.</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dataAnalysisModal">
-                            Learn More
-                        </button>
+
+            <!-- Data Analysis -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-hover">
+                    <img src="assets/images/data-analysis.jpg" 
+                         class="card-img-top service-image" 
+                         alt="Data analytics and business intelligence"
+                         loading="lazy">
+                    <div class="card-body p-4">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-chart-line fa-2x text-primary"></i>
+                        </div>
+                        <h3 class="h5 card-title fw-bold">Data Analysis</h3>
+                        <p class="card-text text-secondary">
+                            Transform raw data into actionable business insights
+                        </p>
+                        <div class="mt-auto">
+                            <button type="button" 
+                                    class="btn btn-outline-primary"
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#dataAnalysisModal">
+                                Service Details <i class="fas fa-chevron-right ms-2"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- Call to Action Section -->
-<section class="cta-section py-5 bg-body bg-gradient text-dark rounded-3 shadow-lg">
-  <div class="container">
-    <div class="row align-items-center">
-      <!-- Text Column -->
-      <div class="col-md-8 text-center text-md-start mb-3 mb-md-0">
-        <h2 class="display-5 fw-bold mb-3">Why Choose Us?</h2>
-        <p class="lead mb-4">
-          We combine technical expertise with a client-centric approach, delivering solutions that align with your business goals.
-        </p>
-        <p class="mb-4">
-          From startups to enterprises, our multidisciplinary team ensures innovation, security, and measurable results at every stage of your digital journey. Let us be your partner in navigating the evolving tech landscape!
-        </p>
-      </div>
-      <!-- Button Column -->
-      <div class="col-md-4 text-center text-md-end">
-        <a href="contact.php" class="btn btn-primary btn-lg px-4 rounded-pill">
-          Get Started <i class="bi bi-arrow-right ms-2"></i>
-        </a>
-      </div>
+
+<!-- Strategic CTA Section -->
+<section class="cta-strategic py-5 bg-dark text-white">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-8">
+                <h2 class="display-6 fw-bold mb-3">Strategic Technology Partnership</h2>
+                <p class="lead mb-4">
+                    Why 150+ businesses choose Vemico Tech as their digital transformation partner
+                </p>
+                <ul class="list-unstyled row g-3">
+                    <li class="col-6 col-md-4 d-flex align-items-center gap-2">
+                        <i class="fas fa-shield-alt text-primary"></i>
+                        Enterprise-grade security
+                    </li>
+                    <li class="col-6 col-md-4 d-flex align-items-center gap-2">
+                        <i class="fas fa-clock text-primary"></i>
+                        24/7 Priority support
+                    </li>
+                    <li class="col-6 col-md-4 d-flex align-items-center gap-2">
+                        <i class="fas fa-certificate text-primary"></i>
+                        Certified experts
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 text-center">
+                <div class="cta-card bg-primary text-white p-4 rounded-3 shadow">
+                    <h3 class="h4 mb-3">Start Your Journey</h3>
+                    <p class="small mb-4">Schedule a free consultation with our experts</p>
+                    <a href="contact.php" class="btn btn-light btn-lg w-100">
+                        Book Discovery Call
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </section>
 
 

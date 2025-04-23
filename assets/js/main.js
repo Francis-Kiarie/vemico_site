@@ -76,3 +76,23 @@ jQuery(document).ready(function($){
 //         }
 //     })
 // });
+
+ // Newsletter Form Validation
+ (function() {
+    'use strict'
+    const form = document.getElementById('newsletterForm')
+    const successMessage = document.getElementById('successMessage')
+
+    form.addEventListener('submit', function(event) {
+        if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+        } else {
+            event.preventDefault()
+            successMessage.style.display = 'block'
+            form.reset()
+            setTimeout(() => successMessage.style.display = 'none', 5000)
+        }
+        form.classList.add('was-validated')
+    }, false)
+})()
